@@ -193,17 +193,13 @@ def menu(exits):
       
         print_menu(exits)        
        
-        player_input = input("")
+        player_input = input("Please choose an exit.")
       
         player_input_1 = normalise_input(player_input)
         
         if is_valid_exit(exits, player_input_1) is True:
             return player_input_1
-        else:
-            
-            print ("Please choose another exit")
-            return print_menu(exits)
-
+       
 
 
 def move(exits, direction):
